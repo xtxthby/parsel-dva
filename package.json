@@ -1,23 +1,23 @@
 {
-  "name": "js-22",
+  "name": "parsel-dva",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-07/"
+    "build": "parcel build src/*.html --public-url /parsel-dva/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/luxplanjay/js-22.git"
+    "url": "git+https://github.com/luxplanjay/parsel-dva.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/luxplanjay/js-22/issues"
+    "url": "https://github.com/luxplanjay/parsel-dva/issues"
   },
-  "homepage": "https://github.com/luxplanjay/js-22#readme",
+  "homepage": "https://github.com/luxplanjay/parsel-dva#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-handlebars-precompile": "^1.0.2"
