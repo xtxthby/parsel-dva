@@ -1,7 +1,7 @@
 import throttle from 'lodash.throttle';
 import '../css/common.css';
 import '../css/feedback-form.css';
-
+// це називається антипатрн ключ присваївають змінній
 const STORAGE_KEY = 'feedback-msg';
 
 const refs = {
@@ -20,10 +20,14 @@ populateTextarea();
  * - Очищаем форму
  */
 function onFormSubmit(evt) {
+  //  зупиняємо перезагрузку сторінки
   evt.preventDefault();
 
   console.log('Отправляем форму');
+  // очищаемо форму
   evt.currentTarget.reset();
+  // коли форму відправили очисчаємо форму
+//  тобіш нажали на кнопку
   localStorage.removeItem(STORAGE_KEY);
 }
 
@@ -33,8 +37,13 @@ function onFormSubmit(evt) {
  * - Можно добавить throttle
  */
 function onTextareaInput(evt) {
+  //  ту ставимо не currentTagert а  target  тому що буде 
+  // помилка в консолі із за  throttle тяк як при
+  // всплитті там за енний час накопились стекі
+  // і значення буде інше
   const message = evt.target.value;
-
+        // записуємо меседж  по ключю
+        // в локал сторідж     
   localStorage.setItem(STORAGE_KEY, message);
 }
 
@@ -42,9 +51,12 @@ function onTextareaInput(evt) {
  * - Получаем значение из хранилища
  * - Если там что-то было, обновляем DOM
  */
+//  викликається при загрузкі сторінки
 function populateTextarea() {
+  // отримуємо значення з сховища            тут ключ який зберігає значення
   const savedMessage = localStorage.getItem(STORAGE_KEY);
-
+  //  якщо там щось є то видай на гора, інакше нічого не роби
+  // тобіш якщо вибило то збережеться текст
   if (savedMessage) {
     refs.textarea.value = savedMessage;
   }
@@ -58,7 +70,8 @@ function populateTextarea() {
 // refs.form.addEventListener('input', e => {
 //   // console.log(e.target.name);
 //   // console.log(e.target.value);
-
+// це такий собі локалсторадж якщо значення немає то запише
+// якщо є перезапише
 //   formData[e.target.name] = e.target.value;
 
 //   console.log(formData);

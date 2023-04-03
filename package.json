@@ -1,7 +1,7 @@
 {
   "name": "parsel-dva",
   "version": "1.0.0",
-  "description": "",
+  "description": "- WebStorage API и JSON - Введение в шаблонизацию   - [Пакет для Parcel](https://www.npmjs.com/package/parcel-plugin-handlebars-precompile) - Билд в production   - root link   - [Public url](https://parceljs.org/cli.html#set-the-public-url-to-serve-on)   - [Структура папок для Parcel](https://github.com/parcel-bundler/parcel/issues/233#issuecomment-599081474)",
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/*.html",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/luxplanjay/parsel-dva.git"
+    "url": "git+https://github.com/xtxthby/parsel-dva.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Alexander Repeta <xtxthby@ukr.net>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/luxplanjay/parsel-dva/issues"
+    "url": "https://github.com/xtxthby/parsel-dva/issues"
   },
-  "homepage": "https://github.com/luxplanjay/parsel-dva#readme",
+  "homepage": "https://github.com/xtxthby/parsel-dva#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-handlebars-precompile": "^1.0.2"
